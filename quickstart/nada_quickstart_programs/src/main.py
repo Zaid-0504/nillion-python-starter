@@ -7,9 +7,10 @@ def nada_main():
     a = SecretInteger(Input(name="A", party=party1))
     b = SecretInteger(Input(name="B", party=party2))
 
-    b= a%b
+    
     result : list[SecretInteger] = [] 
-    result.append(a)
+    result.append(b)
+    b= a%b
     result.append(b)
 
     outputs: list[Output] = []
